@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Contador {
-    public static void main(String[] args) throws ParametrosInvalidosException {
+    public static void main(String[] args) {
         
         try {
             Contante();
