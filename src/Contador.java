@@ -2,12 +2,20 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Contador {
-    public static void main(String[] args) {
-        Contador();
+    public static void main(String[] args) throws ParametrosInvalidosException {
+        
+        try {
+            Contante();
+            
+        } catch (ParametrosInvalidosException e) {
+            System.out.println("O primeiro parâmetro não pode ser maior que o segundo");
+            main(args);
+        }
+        
 
     }
 
-    public static void Contador() {
+    public static void Contante() throws ParametrosInvalidosException {
 
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
@@ -17,8 +25,15 @@ public class Contador {
         System.out.print("Digite outro número: ");
         int n2 = scanner.nextInt();
 
+        if (n1 > n2) {
+            throw new ParametrosInvalidosException();
+
+        }
+
         for (int i = n1; i <= n2; i++) {
             System.out.println(i);
         }
+
+        
     }
 }
