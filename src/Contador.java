@@ -9,10 +9,9 @@ public class Contador {
             
         } catch (ParametrosInvalidosException e) {
             System.out.println("O primeiro parâmetro não pode ser maior que o segundo");
-            main(args);
+            
         }
         
-
     }
 
     public static void Contante() throws ParametrosInvalidosException {
@@ -28,6 +27,7 @@ public class Contador {
 
         if (n1 > n2) {
             throw new ParametrosInvalidosException();
+            
 
         }
 
