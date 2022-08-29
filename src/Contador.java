@@ -24,6 +24,7 @@ public class Contador {
 
         System.out.print("Digite outro número: ");
         int n2 = scanner.nextInt();
+        scanner.close();
 
         if (n1 > n2) {
             throw new ParametrosInvalidosException();
