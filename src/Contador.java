@@ -28,7 +28,6 @@ public class Contador {
         if (n1 > n2) {
             throw new ParametrosInvalidosException();
             
-
         }
 
         for (int i = n1; i <= n2; i++) {
